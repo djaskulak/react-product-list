@@ -48,7 +48,7 @@ const allRatings = data.map( obj => {
 })
 
 // need to get the ratings from each infividual object and add them onto the total, then return total
-const rates = allRatings.reduce( (total, rate) => {
+const rates = allRatings.reduce( (obj, total) => {
     total[rate] += obj.rating
     return total
 }, {})
