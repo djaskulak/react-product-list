@@ -1,5 +1,5 @@
 import './App.css';
-import data, {allCategories, uniqueCategories, categoriesAndCounts, namesAndPrices, onlyToys, ratingAverage} from './data';
+import data, {allCategories, uniqueCategories, categoriesAndCounts, namesAndPrices, onlyToys} from './data';
 
 
 console.log(data);
@@ -8,7 +8,7 @@ console.log(uniqueCategories);
 console.log(categoriesAndCounts);
 console.log(namesAndPrices);
 console.log(onlyToys);
-console.log(ratingAverage);
+//console.log(ratingAverage);
 
 function App() {
   return (

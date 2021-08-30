@@ -43,18 +43,18 @@ const namesAndPrices = data.map( obj => {
 const onlyToys = data.filter( obj => obj.category = 'Toys' )
 
 //Part 3:
-const allRatings = data.map( obj => {
-    return obj.rating
-})
+// const allRatings = data.map( obj => {
+//     return obj.rating
+// })
 
 // need to get the ratings from each infividual object and add them onto the total, then return total
-const rates = allRatings.reduce( (obj, total) => {
-    total[rate] += obj.rating
-    return total
-}, {})
+// const rates = allRatings.reduce( (obj, total) => {
+//     total[rate] += obj.rating
+//     return total
+// }, {})
 
-const ratings = Object.keys(rates)
-const ratingAverage = ( total / ratings.length )
+// const ratings = Object.keys(rates)
+// const ratingAverage = ( total / ratings.length )
 
 
 
@@ -63,6 +63,6 @@ export {
     uniqueCategories,
     categoriesAndCounts,
     namesAndPrices,
-    onlyToys,
-    ratingAverage
+    onlyToys
+    //ratingAverage
 }
