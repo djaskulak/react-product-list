@@ -1,19 +1,17 @@
 import './App.css';
-import data, {allCategories, uniqueCategories, categoriesAndCounts, namesAndPrices, onlyToys} from './data';
+import data, {uniqueCategories} from './data';
 
-
-console.log(data);
-console.log(allCategories);
-console.log(uniqueCategories);
-console.log(categoriesAndCounts);
-console.log(namesAndPrices);
-console.log(onlyToys);
-//console.log(ratingAverage);
+import CategoryList from './CategoryList';
+import ProductList from './ProductList';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>Productify</h1>
+      <p>Product Count: {data.length}</p>
+      <p>Category Count: {uniqueCategories.length}</p>
+      <CategoryList />
+      <ProductList />
     </div>
   );
 }

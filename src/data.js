@@ -27,7 +27,9 @@ const categoriesAndCounts = allCategories.reduce( (acc, cat) => {
     return acc
 }, {} )
 
-//const catsAndCounts = 
+const catsAndCounts = uniqueCategories.map( name => {
+    return { name, count: categoriesAndCounts[name] } // { name: 'toys' }
+})
 
 
 //////////////////////// LAB 01 ////////////////////////
@@ -62,6 +64,7 @@ export {
     allCategories,
     uniqueCategories,
     categoriesAndCounts,
+    catsAndCounts,
     namesAndPrices,
     onlyToys
     //ratingAverage
