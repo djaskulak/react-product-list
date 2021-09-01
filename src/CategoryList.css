@@ -1,0 +1,10 @@
+.CategoryList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CategoryList > button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+}
