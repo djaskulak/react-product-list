@@ -3,13 +3,16 @@ import data, {uniqueCategories} from './data';
 
 import CategoryList from './CategoryList';
 import ProductList from './ProductList';
+import Header from './Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>Productify</h1>
-      <p>Product Count: {data.length}</p>
-      <p>Category Count: {uniqueCategories.length}</p>
+      <Header 
+        title="Productify"
+        productCount={data.length}
+        categoryCount={uniqueCategories.length}
+      />
       <CategoryList />
       <ProductList />
     </div>
