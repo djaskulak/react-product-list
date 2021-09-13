@@ -31,41 +31,9 @@ const catsAndCounts = uniqueCategories.map( name => {
     return { name, count: categoriesAndCounts[name] } // { name: 'toys' }
 })
 
-
-//////////////////////// LAB 01 ////////////////////////
-
-
-// Part 1:
-const namesAndPrices = data.map( obj => {
-    return obj.name + ' ' + obj.price
-})
-
-//Part 2:
-// return true if you want to keep the function and return false if you want to exclude the item
-const onlyToys = data.filter( obj => obj.category = 'Toys' )
-
-//Part 3:
-// const allRatings = data.map( obj => {
-//     return obj.rating
-// })
-
-// need to get the ratings from each infividual object and add them onto the total, then return total
-// const rates = allRatings.reduce( (obj, total) => {
-//     total[rate] += obj.rating
-//     return total
-// }, {})
-
-// const ratings = Object.keys(rates)
-// const ratingAverage = ( total / ratings.length )
-
-
-
 export {
     allCategories,
     uniqueCategories,
     categoriesAndCounts,
-    catsAndCounts,
-    namesAndPrices,
-    onlyToys
-    //ratingAverage
+    catsAndCounts
 }
