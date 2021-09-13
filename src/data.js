@@ -33,7 +33,7 @@ const catsAndCounts = uniqueCategories.map( name => {
 
 
 //////////////////////// LAB 01 ////////////////////////
-// published on the Lab 1 branch 
+// published on the Lab 1
 
 
 // Part 1:
