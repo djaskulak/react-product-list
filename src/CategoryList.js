@@ -3,7 +3,7 @@ import './CategoryList.css';
 
 function CategoryList() {
     return (
-        <div class="CategoryList">
+        <div className="CategoryList">
           { catsAndCounts.map(obj => {
             return (
               <button>

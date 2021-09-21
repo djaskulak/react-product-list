@@ -4,7 +4,7 @@ function Header(props) {
     const { title, productCount, categoryCount} = props
 
     return (
-        <div class="Header">
+        <div className="Header">
             <h1>{title}</h1>
             <p>Product Count: {productCount}</p>
             <p>Category Count: {categoryCount}</p>

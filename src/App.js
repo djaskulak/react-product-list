@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import data, {uniqueCategories} from './data';
 
 import CategoryList from './CategoryList';
@@ -6,6 +7,8 @@ import ProductList from './ProductList';
 import Header from './Header';
 
 function App() {
+  const [category, setCategory] = useState('Tools');
+
   return (
     <div className="App">
       <Header 
@@ -13,8 +16,12 @@ function App() {
         productCount={data.length}
         categoryCount={uniqueCategories.length}
       />
-      <CategoryList />
-      <ProductList />
+      <CategoryList 
+        category = {category}
+      />
+      <ProductList 
+        category = {category}
+      />
     </div>
   );
 }
