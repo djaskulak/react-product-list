@@ -7,7 +7,7 @@ import ProductList from './ProductList';
 import Header from './Header';
 
 function App() {
-  const [category, setCategory] = useState('Tools');
+  const [category, setCategory] = useState('Toys');
 
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
       />
       <CategoryList 
         category = {category}
+        onClick = { newCategory =>  setCategory(newCategory) }
       />
       <ProductList 
         category = {category}
